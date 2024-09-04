@@ -1,10 +1,131 @@
+<!-- Assisted in layout design with ChatGPT to optimize the arrangement and presentation of web content. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cavalry Store</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            text-align: left;
+            padding: 15px;
+        }
+        header .logo {
+            float: left;
+            width: 100px;
+            height: 100px;
+        }
+        header .title {
+            float: left;
+            margin-left: 20px;
+            line-height: 100px;
+        }
+        footer {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+        }
+        .container .nav {
+            width: 20%; /* Adjust width for nav */
+        }
+        .container .main-content {
+            width: 60%; /* Adjust width for main content */
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container .sidebar {
+            width: 20%; /* Adjust width for sidebar */
+        }
+        .product-item {
+            width: 20%; /* Adjust width for each product item */
+            margin: 0 1.5%; /* Margin between items */
+            box-sizing: border-box; /* Include padding and border in width */
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
+
+<!-- Banner Area -->
+<header class="col-12 clearfix">
+    <div class="col-3 logo">
+        <img src="cavalry.png" alt="Cavalry Logo" width="100" height="100">
+    </div>
+    <div class="col-9 title">
+        <h1>Cavalry</h1>
+    </div>
+</header>
+
+<!-- Navigation and Content Area -->
+<div class="container">
+    <!-- Navigation Area -->
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area: Product Showcase -->
+    <section class="main-content">
+        <h2>Product Showcase</h2>
+
+        <!-- Product 1: Peach Can -->
+        <div class="product-item">
+            <img src="peach_can.jpg" alt="Peach Can">
+            <p>Peach Can</p>
+        </div>
+
+        <!-- Product 2: Spaghetti Can -->
+        <div class="product-item">
+            <img src="spe_can.jpeg" alt="Spaghetti Can">
+            <p>Spaghetti Can</p>
+        </div>
+
+        <!-- Product 3: Baked Beans Can -->
+        <div class="product-item">
+            <img src="baked_bean.jpeg" alt="Baked Beans Can">
+            <p>Baked Beans Can</p>
+        </div>
+    </section>
+
+    <!-- Sidebar Area: Advertisements -->
+    <aside class="sidebar">
+        <h3>Advertisements</h3>
+        <p>Ad 1: Buy One, Get One Free!</p>
+        <p>Ad 2: All Items Half Price!</p>
+    </aside>
+</div>
+
+<!-- Footer Area -->
+<footer class="col-12">
+    <p><a href="terms.html">Terms of Use</a></p>
+    <p><a href="privacy.html">Cookie and Privacy Policy</a></p>
+    <p>&copy; 2024 Cavalry Store. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
