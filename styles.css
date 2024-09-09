@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    text-align: left;
+    padding: 15px;
+}
+header .logo {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+header .title {
+    float: left;
+    margin-left: 20px;
+    line-height: 100px;
+}
+.container {
+    display: flex;
+}
+.container .nav {
+    width: 20%;
+}
+.container .main-content {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .sidebar {
+    width: 20%;
+}
+.product-item {
+    width: 20%;
+    margin: 0 1.5%;
+    box-sizing: border-box;
+}
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    margin: 5px 0;
+}

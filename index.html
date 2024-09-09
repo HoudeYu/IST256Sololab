@@ -1,67 +1,25 @@
-<!-- Assisted in layout design with ChatGPT to optimize the arrangement and presentation of web content. -->
-<!-- GitHub Link: https://github.com/HoudeYu/IST256Sololab it contains pictures-->
-<!-- https://houdeyu.github.io/IST256Sololab/-->
+<!--
+Assisted in layout design with ChatGPT to optimize the arrangement and presentation of web content.
+GitHub Link: https://github.com/HoudeYu/IST256Sololab it contains pictures
+https://houdeyu.github.io/IST256Sololab/
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cavalry Store</title>
+    <!-- 引入外部 CSS 文件 -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- 内部 CSS -->
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        header {
-            text-align: left;
-            padding: 15px;
-        }
-        header .logo {
-            float: left;
-            width: 100px;
-            height: 100px;
-        }
-        header .title {
-            float: left;
-            margin-left: 20px;
-            line-height: 100px;
+        body {
+            font-family: Arial, sans-serif;
         }
         footer {
+            background-color: #f1f1f1;
+            padding: 10px;
             text-align: center;
-        }
-        .container {
-            display: flex;
-        }
-        .container .nav {
-            width: 20%; /* Adjust width for nav */
-        }
-        .container .main-content {
-            width: 60%; /* Adjust width for main content */
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .container .sidebar {
-            width: 20%; /* Adjust width for sidebar */
-        }
-        .product-item {
-            width: 20%; /* Adjust width for each product item */
-            margin: 0 1.5%; /* Margin between items */
-            box-sizing: border-box; /* Include padding and border in width */
-        }
-        .product-item img {
-            width: 100%;
-            height: auto;
-        }
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 5px 0;
         }
     </style>
 </head>
@@ -73,7 +31,7 @@
         <img src="cavalry.png" alt="Cavalry Logo" width="100" height="100">
     </div>
     <div class="col-9 title">
-        <h1>Cavalry</h1>
+        <h1 style="color: blue;">Cavalry</h1> <!-- 使用内联 CSS 给标题加颜色 -->
     </div>
 </header>
 
