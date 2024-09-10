@@ -25,18 +25,18 @@ https://houdeyu.github.io/IST256Sololab/
 </head>
 <body>
 
-<!-- Banner Area -->
-<header class="col-12 clearfix">
-    <div class="col-3 logo">
+<!-- 第一排: 标题区域 -->
+<header class="header">
+    <div class="logo">
         <img src="cavalry.png" alt="Cavalry Logo" width="100" height="100">
     </div>
-    <div class="col-9 title">
+    <div class="title">
         <h1 style="color: blue;">Cavalry</h1> <!-- 使用内联 CSS 给标题加颜色 -->
     </div>
 </header>
 
-<!-- Navigation and Content Area -->
-<div class="container">
+<!-- 第二排: 导航栏，商品展示，广告区域 -->
+<div class="content-row">
     <!-- Navigation Area -->
     <nav class="nav">
         <ul>
@@ -53,23 +53,26 @@ https://houdeyu.github.io/IST256Sololab/
     <section class="main-content">
         <h2>Product Showcase</h2>
 
-        <!-- Product 1: Peach Can -->
-        <div class="product-item">
-            <img src="peach_can.jpg" alt="Peach Can">
-            <p>Peach Can</p>
-        </div>
+        <!-- Product List Container -->
+        <div class="product-list">
+            <!-- Product 1: Peach Can -->
+            <div class="product-item">
+                <img src="peach_can.jpg" alt="Peach Can">
+                <p>Peach Can</p>
+            </div>
 
-        <!-- Product 2: Spaghetti Can -->
-        <div class="product-item">
-            <img src="spe_can.jpeg" alt="Spaghetti Can">
-            <p>Spaghetti Can</p>
-        </div>
+            <!-- Product 2: Spaghetti Can -->
+            <div class="product-item">
+                <img src="spe_can.jpeg" alt="Spaghetti Can">
+                <p>Spaghetti Can</p>
+            </div>
 
-        <!-- Product 3: Baked Beans Can -->
-        <div class="product-item">
-            <img src="baked_bean.jpeg" alt="Baked Beans Can">
-            <p>Baked Beans Can</p>
-        </div>
+            <!-- Product 3: Baked Beans Can -->
+            <div class="product-item">
+                <img src="baked_bean.jpeg" alt="Baked Beans Can">
+                <p>Baked Beans Can</p>
+            </div>
+        </div> <!-- End of Product List -->
     </section>
 
     <!-- Sidebar Area: Advertisements -->
@@ -80,8 +83,8 @@ https://houdeyu.github.io/IST256Sololab/
     </aside>
 </div>
 
-<!-- Footer Area -->
-<footer class="col-12">
+<!-- 第三排: 页脚区域 -->
+<footer class="footer">
     <p><a href="terms.html">Terms of Use</a></p>
     <p><a href="privacy.html">Cookie and Privacy Policy</a></p>
     <p>&copy; 2024 Cavalry Store. All Rights Reserved.</p>
