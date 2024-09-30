@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Signup - Cavalry Store</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- 标题和导航栏区域 -->
+<header class="header">
+    <div class="logo">
+        <img src="cavalry.png" alt="Cavalry Logo" width="100" height="100">
+    </div>
+    <div class="title" style="display: flex; align-items: center;"> <!-- 修改此行 -->
+        <h1 style="color: #020202; margin-left: 10px;">Cavalry</h1> <!-- 添加左边距 -->
+    </div>
+</header>
+
+<!-- Main Content Area -->
+<section class="main-content">
+    <div class="container mt-4">
+        <h2>User Signup</h2>
+        <!-- 注册表单开始 -->
+        <form action="signup_process.php" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+        <!-- 注册表单结束 -->
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="footer">
+    <p><a href="terms.html">Terms of Use</a></p>
+    <p><a href="privacy.html">Cookie and Privacy Policy</a></p>
+    <p>&copy; 2024 Cavalry Store. All Rights Reserved.</p>
+</footer>
+
+<!-- 引入 Bootstrap JS 和依赖库 -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
