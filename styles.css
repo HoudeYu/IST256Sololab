@@ -86,3 +86,7 @@
     padding: 20px;
     text-align: center;
 }
+/* 检查是否输入错误 */
+.is-invalid {
+    border-color: red; /* 输入框错误时的红色边框 */
+}
